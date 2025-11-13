@@ -1,5 +1,6 @@
 const express = require("express");
 const Order = require("../models/Order");
+const User = require("../models/User");
 const { auth, isAdmin } = require("../middleware/auth");
 const upload = require("../middleware/upload");
 const { uploadToS3, getFileUrl } = require("../utils/s3");
